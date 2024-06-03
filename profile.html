@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">User Profile</div>
+    </header>
+    <main>
+        <section class="profile">
+            <div class="profile-info">
+                <img src="profile2.png" alt="User Profile Picture" class="profile-pic">
+                <h1>John Doe</h1>
+                <p>Top 4 Favourite Movies:</p>
+                <ul class="favourite-movies">
+                    <li>Movie Title 1</li>
+                    <li>Movie Title 2</li>
+                    <li>Movie Title 3</li>
+                    <li>Movie Title 4</li>
+                </ul>
+                <p>Kilometers Walked: 150 km</p>
+            </div>
+        </section>
+        <section class="recent-visits">
+            <h2>Most Recent Movie Location Visits</h2>
+            <div class="movie-list">
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="poster1.jpg" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 1</h2>
+                        <p>Visited: Location 1</p>
+                        <p>Review: Amazing place, had a great time!</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="poster2.jpg" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 2</h2>
+                        <p>Visited: Location 2</p>
+                        <p>Review: Beautiful scenery and memorable experience.</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="poster3.jpg" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 3</h2>
+                        <p>Visited: Location 3</p>
+                        <p>Review: Loved the atmosphere, felt like I was in the movie.</p>
+                    </div>
+                </div>
+                <div class="movie-item">
+                    <div class="movie-poster">
+                        <img src="poster4.jpg" alt="Movie Poster">
+                    </div>
+                    <div class="movie-info">
+                        <h2>Movie Title 4</h2>
+                        <p>Visited: Location 4</p>
+                        <p>Review: A must-visit for any movie fan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">VisitList</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #14181c;
+    color: #d1d5da;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #1b2127;
+    border-bottom: 1px solid #2c333a;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile {
+    background-color: #1f252d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.favourite-movies {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #58a6ff;
+}
+
+.recent-visits {
+    background-color: #1f252d;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.recent-visits h2 {
+    text-align: center;
+    color: #58a6ff;
+    margin-bottom: 20px;
+}
+
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-item {
+    display: flex;
+    background-color: #1b2127;
+    border-radius: 10px;
+    overflow: 
