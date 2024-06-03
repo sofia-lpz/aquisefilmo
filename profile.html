@@ -16,12 +16,24 @@
                 <img src="profile2.png" alt="User Profile Picture" class="profile-pic">
                 <h1>John Doe</h1>
                 <p>Top 4 Favourite Movies:</p>
-                <ul class="favourite-movies">
-                    <li>Movie Title 1</li>
-                    <li>Movie Title 2</li>
-                    <li>Movie Title 3</li>
-                    <li>Movie Title 4</li>
-                </ul>
+                <div class="favourite-movies">
+                    <div class="movie-item">
+                        <img src="poster1.png" alt="Movie Title 1" class="movie-poster">
+                        <span>Movie Title 1</span>
+                    </div>
+                    <div class="movie-item">
+                        <img src="poster2.png" alt="Movie Title 2" class="movie-poster">
+                        <span>Movie Title 2</span>
+                    </div>
+                    <div class="movie-item">
+                        <img src="poster3.png" alt="Movie Title 3" class="movie-poster">
+                        <span>Movie Title 3</span>
+                    </div>
+                    <div class="movie-item">
+                        <img src="poster4.png" alt="Movie Title 4" class="movie-poster">
+                        <span>Movie Title 4</span>
+                    </div>
+                </div>
                 <p>Kilometers Walked: 150 km</p>
             </div>
         </section>
@@ -30,7 +42,7 @@
             <div class="movie-list">
                 <div class="movie-item">
                     <div class="movie-poster">
-                        <img src="poster1.jpg" alt="Movie Poster">
+                        <img src="poster1.png" alt="Movie Poster">
                     </div>
                     <div class="movie-info">
                         <h2>Movie Title 1</h2>
@@ -40,7 +52,7 @@
                 </div>
                 <div class="movie-item">
                     <div class="movie-poster">
-                        <img src="poster2.jpg" alt="Movie Poster">
+                        <img src="poster2.png" alt="Movie Poster">
                     </div>
                     <div class="movie-info">
                         <h2>Movie Title 2</h2>
@@ -50,7 +62,7 @@
                 </div>
                 <div class="movie-item">
                     <div class="movie-poster">
-                        <img src="poster3.jpg" alt="Movie Poster">
+                        <img src="poster3.png" alt="Movie Poster">
                     </div>
                     <div class="movie-info">
                         <h2>Movie Title 3</h2>
@@ -60,7 +72,7 @@
                 </div>
                 <div class="movie-item">
                     <div class="movie-poster">
-                        <img src="poster4.jpg" alt="Movie Poster">
+                        <img src="poster4.png" alt="Movie Poster">
                     </div>
                     <div class="movie-info">
                         <h2>Movie Title 4</h2>
@@ -74,10 +86,11 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Friends</a></li>
-                <li><a href="#">VisitList</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="friends.html">Friends</a></li>
+                <li><a href="index.html">My stuff</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="nearme.html">Near me</a></li>
             </ul>
         </nav>
     </footer>
@@ -136,9 +149,25 @@ main {
 }
 
 .favourite-movies {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.favourite-movies .movie-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favourite-movies .movie-poster {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.favourite-movies .movie-item span {
+    margin-top: 5px;
     color: #58a6ff;
 }
 
@@ -165,4 +194,59 @@ main {
     display: flex;
     background-color: #1b2127;
     border-radius: 10px;
-    overflow: 
+    overflow: hidden;
+}
+
+.movie-item .movie-poster img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.movie-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-info h2 {
+    margin: 0 0 5px;
+    font-size: 1.2em;
+    color: #d1d5da;
+}
+
+.movie-info p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    color: #9aa5b1;
+}
+
+footer {
+    background-color: #1b2127;
+    border-top: 1px solid #2c333a;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+footer nav ul li a:hover {
+    color: #d1d5da;
+}
+</style>
